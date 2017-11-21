@@ -1,0 +1,167 @@
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Open Sans Condensed', sans-serif;
+
+html, ::before, ::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.app {
+	max-width: 1000px;
+	height: 200vh;
+	margin: 0 auto;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #555555;
+	margin-top: 7vh;
+	font-size: 1.7rem;
+	padding-top: 0.5rem;
+}
+
+.header {
+	width: 100%;
+	height: 7vh;
+	position: fixed;
+	top: 0;
+	background-color: #ffffff;
+}
+
+.header__wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+	height: 7vh;
+	line-height: 7vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1rem;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+}
+
+.header__link {
+	display: block;
+	padding: 0 2rem;
+	text-decoration: none;
+	color: #555555;
+}
+
+// .header__link::first-letter {
+// 	color: #f44336
+// }
+
+.header__nav {
+
+}
+
+.nav{
+
+}
+
+.nav__link {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	text-decoration: underline dotted;
+	color: #555555;
+	letter-spacing: 0.1rem;
+	font-size: 1.5rem;
+	padding: 0 2rem;
+	display: inline-block;
+}
+
+.infolog {
+	padding: 0.7rem 0;
+	min-height: 2vh;
+	max-height: 3vh;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	color: #555555;
+}
+
+.players-stat {
+	width: 100%;
+}
+
+.players-stat__header {
+	width: 100%;
+	height: 3vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.players-stat__activity {
+	text-transform: capitalize;
+	font-weight: 700;
+	width: 16vw;
+	text-align: center;
+}
+
+.players-stat__players {
+	width: 100%;
+	height: 87vh;
+}
+
+.player {
+	width: 100%;
+	display: flex;
+	align-items: center;
+} 
+
+.player--ingame {
+	height: 12.4vh;
+}
+
+.player__name {
+	width: 20vw;
+	height: 12.4vh;
+	padding: 0 2rem;
+	display: flex;
+	align-items: center;
+	text-decoration: underline dotted;
+}
+
+.player__stats {
+	width: 80vw;
+	height: 12.4vh;
+	display: flex;
+}
+
+.stat {
+	width: 16vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.stat__item {
+	width: 80%;
+	height: 3.5vh;
+	line-height: 3.5vh;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.3rem;
+}
+
+.stat__item--good {
+	background-color: #4CAF50;
+}
+
+.stat__item--normal {
+	background-color: #FFEB3B;
+	color: inherit;
+}
+
+.stat__item--bad {
+	background-color: #f44336;
+}
+
