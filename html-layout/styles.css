@@ -17,27 +17,29 @@ html, ::before, ::after {
 	margin: 0 auto;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #555555;
-	margin-top: 7vh;
 	font-size: 1.7rem;
-	padding-top: 0.5rem;
+	padding-top: 3vh;
 }
 
 .header {
 	width: 100%;
-	height: 7vh;
-	position: fixed;
-	top: 0;
-	background-color: #ffffff;
+	max-height: 8vh;
+	position: absolute;
+}
+
+.header--ishidden {
+	top: -8.5vh;
 }
 
 .header__wrapper {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1000px;
-	height: 7vh;
-	line-height: 7vh;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 2rem 1rem 2rem;
+	background-color: #ffffff;
 }
 
 .header__logo {
@@ -45,46 +47,43 @@ html, ::before, ::after {
 	font-size: 1.1rem;
 	letter-spacing: 0.3rem;
 	text-transform: uppercase;
+	width: 40%;
 }
 
 .header__link {
 	display: block;
-	padding: 0 2rem;
 	text-decoration: none;
 	color: #555555;
 }
-
-// .header__link::first-letter {
-// 	color: #f44336
-// }
 
 .header__nav {
 
 }
 
 .nav{
-
+	width: 60%;
+	padding: 0 2rem;
+	display: flex;
+	justify-content: space-around;
 }
 
 .nav__link {
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-transform: uppercase;
-	text-decoration: underline dotted;
 	color: #555555;
-	letter-spacing: 0.1rem;
-	font-size: 1.5rem;
-	padding: 0 2rem;
-	display: inline-block;
+	font-size: 2.5rem;
+	text-decoration: none;
 }
 
 .infolog {
-	padding: 0.7rem 0;
 	min-height: 2vh;
 	max-height: 3vh;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-style: italic;
-	color: #555555;
+	background-color: #555555;
+	color: #ffffff;
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 0.6vh;
 }
 
 .players-stat {
@@ -101,13 +100,13 @@ html, ::before, ::after {
 .players-stat__activity {
 	text-transform: capitalize;
 	font-weight: 700;
-	width: 16vw;
+	width: 17vw;
 	text-align: center;
 }
 
 .players-stat__players {
 	width: 100%;
-	height: 87vh;
+	height: 94vh;
 }
 
 .player {
@@ -117,12 +116,12 @@ html, ::before, ::after {
 } 
 
 .player--ingame {
-	height: 12.4vh;
+	height: 15.6vh;
 }
 
 .player__name {
-	width: 20vw;
-	height: 12.4vh;
+	width: 15vw;
+	height: 15.6vh;
 	padding: 0 2rem;
 	display: flex;
 	align-items: center;
@@ -130,13 +129,13 @@ html, ::before, ::after {
 }
 
 .player__stats {
-	width: 80vw;
-	height: 12.4vh;
+	width: 85vw;
+	height: 15.6vh;
 	display: flex;
 }
 
 .stat {
-	width: 16vw;
+	width: 17vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -144,8 +143,8 @@ html, ::before, ::after {
 
 .stat__item {
 	width: 80%;
-	height: 3.5vh;
-	line-height: 3.5vh;
+	height: 4.8vh;
+	line-height: 4.5vh;
 	margin: 0 auto;
 	text-align: center;
 	color: white;
