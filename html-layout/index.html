@@ -20,25 +20,58 @@
 					<input type="radio" class="full-nav__input" id="inp1" name="inputs">
 					<label for="inp1" class="full-nav__item">add player</label>
 					<div class="full-nav__submenu">
-						<div class="full-nav__submenu-row">
-							
-						</div>
-						<div class="full-nav__submenu-row">
-							
-						</div>
-						<div class="full-nav__submenu-row">
-							
+						<div class="full-nav__new-player">
+							<div class="full-nav__submenu-row full-nav__submenu-row--name">
+								<label for="playerName">name:</label>
+								<input type="text" id="playerName" class="full-nav__input--text">
+							</div>
+							<div class="full-nav__submenu-row full-nav__submenu-row--role">
+								<p class="full-nav__heading">role:</p>
+								<input type="checkbox" id="isLibero" class="full-nav__input-role">
+								<input type="checkbox" id="isSetter" class="full-nav__input-role">
+								<input type="checkbox" id="isOutsideH" class="full-nav__input-role">
+								<input type="checkbox" id="isWeeksideH" class="full-nav__input-role">
+								<input type="checkbox" id="isMiddleB" class="full-nav__input-role">
+								<label for="isLibero" class="full-nav__role full-nav__role--checked">libero</label>
+								<label for="isSetter" class="full-nav__role">setter</label>
+								<label for="isOutsideH" class="full-nav__role">outside hitter</label>
+								<label for="isWeeksideH" class="full-nav__role">weekside hitter</label>
+								<label for="isMiddleB" class="full-nav__role">middle blocker</label>
+							</div>
+							<div class="full-nav__submenu-row full-nav__submenu-row--type">
+								<input type="radio" name="role" id="isField" checked class="full-nav__input">
+								<input type="radio" name="role" id="isReserve" class="full-nav__input">
+								<label for="isField" class="full-nav__status">field player</label>
+								<label for="isReserve" class="full-nav__status full-nav__status--checked">reserve player</label>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="full-nav__item" id="editplayer">
-					<input type="radio" class="full-nav__input" id="inp2" name="inputs">
-					<label for="inp2" class="full-nav__item">edit player</label>
-					<div class="full-nav__submenu"></div>
 				</div>
 				<div class="full-nav__item" id="newround">
 					<input type="radio" class="full-nav__input" id="inp3" name="inputs" disabled>
 					<label for="inp3" class="full-nav__item">begin round</label>
+				</div>
+				<div class="full-nav__item" id="editplayer">
+					<input type="radio" class="full-nav__input" id="inp2" name="inputs">
+					<label for="inp2" class="full-nav__item">edit player</label>
+					<div class="full-nav__submenu">
+						<div class="full-nav__players">
+							<div class="full-nav__player">player one name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+							<div class="full-nav__player">player name</div>
+						</div>
+					</div>
 				</div>
 				<div class="full-nav__item" id="clearall">
 					<input type="radio" class="full-nav__input" id="inp4" name="inputs" disabled>
@@ -46,7 +79,7 @@
 				</div>
 				<div class="full-nav__item" id="setlang">
 					<input type="radio" class="full-nav__input" id="inp5" name="inputs">
-					<label for="inp5" class="full-nav__item">change language</label>
+					<label for="inp5" class="full-nav__item">select language</label>
 					<div class="full-nav__submenu">
 						<div class="full-nav__submenu-item" id="langru">russian</div>
 						<div class="full-nav__submenu-item" id="langen">english</div>
