@@ -16,35 +16,49 @@
 		<nav class="full-nav">
 			<div class="logo logo--full"></div>
 			<div class="full-nav__box">
-				<div class="full-nav__item">
-					<input type="radio" class="full-nav__input" id="inp1">
-					<label for="inp1"  class="full-nav__item">add player</label>
-					<div></div>
+				<div class="full-nav__item" id="newplayer">
+					<input type="radio" class="full-nav__input" id="inp1" name="inputs">
+					<label for="inp1" class="full-nav__item">add player</label>
+					<div class="full-nav__submenu">
+						<div class="full-nav__submenu-row">
+							
+						</div>
+						<div class="full-nav__submenu-row">
+							
+						</div>
+						<div class="full-nav__submenu-row">
+							
+						</div>
+					</div>
 				</div>
-				<div class="full-nav__item">
-					<input type="radio" class="full-nav__input" id="inp2">
-					<label for="inp2"  class="full-nav__item">begin round</label>
-					<div></div>
+				<div class="full-nav__item" id="editplayer">
+					<input type="radio" class="full-nav__input" id="inp2" name="inputs">
+					<label for="inp2" class="full-nav__item">edit player</label>
+					<div class="full-nav__submenu"></div>
 				</div>
-				<div class="full-nav__item">
-					<input type="radio" class="full-nav__input" id="inp3">
-					<label for="inp3"  class="full-nav__item">clear all results</label>
-					<div></div>
+				<div class="full-nav__item" id="newround">
+					<input type="radio" class="full-nav__input" id="inp3" name="inputs" disabled>
+					<label for="inp3" class="full-nav__item">begin round</label>
 				</div>
-				<div class="full-nav__item">
-					<input type="radio" class="full-nav__input" id="inp4">
-					<label for="inp4"  class="full-nav__item">change language</label>
-					<div></div>
+				<div class="full-nav__item" id="clearall">
+					<input type="radio" class="full-nav__input" id="inp4" name="inputs" disabled>
+					<label for="inp4" class="full-nav__item">clear all results</label>
 				</div>
-				<div class="full-nav__item">
-					<input type="radio" class="full-nav__input" id="inp5">
-					<label for="inp5"  class="full-nav__item">view statistics</label>
-					<div></div>
+				<div class="full-nav__item" id="setlang">
+					<input type="radio" class="full-nav__input" id="inp5" name="inputs">
+					<label for="inp5" class="full-nav__item">change language</label>
+					<div class="full-nav__submenu">
+						<div class="full-nav__submenu-item" id="langru">russian</div>
+						<div class="full-nav__submenu-item" id="langen">english</div>
+					</div>
 				</div>
-				<div class="full-nav__item">
-					<input type="radio" class="full-nav__input" id="inp6">
-					<label for="inp6"  class="full-nav__item">get help</label>
-					<div></div>
+				<div class="full-nav__item" id="stats">
+					<input type="radio" class="full-nav__input" id="inp6" name="inputs" disabled>
+					<label for="inp6" class="full-nav__item">view statistics</label>
+				</div>
+				<div class="full-nav__item" id="help">
+					<input type="radio" class="full-nav__input" id="inp7" name="inputs" disabled>
+					<label for="inp7" class="full-nav__item">help &amp; feedback</label>
 				</div>
 			</div>
 		</nav>
