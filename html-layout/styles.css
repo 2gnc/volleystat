@@ -12,6 +12,136 @@ html, ::before, ::after {
 	box-sizing: inherit;
 }
 
+.header {
+	position: absolute;
+}
+
+.full-nav {
+	position: absolute;
+	width: 100vw;
+	height: 101vh;
+	background-color: #000000;
+	opacity: 0.9;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.full-nav__box {
+	width: 80vw;
+	height: 80vh;
+}
+
+.full-nav__input {
+	display: none;
+}
+
+.full-nav__item {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	height: 13.33vh;
+	line-height: 13.33vh;
+	text-align: center;
+}
+
+.full-nav--ishidden {
+	
+}
+
+.logo {
+	position: absolute;
+	margin-left: 0.5rem;
+	margin-top: 0.5rem;
+	width: 2.2vw;
+	height: 2.2vw;
+	border-radius: 50%;
+	background-color: #f44336;
+}
+
+.logo--small {
+	top: 50%;
+	left: 50%;
+}
+
+.logo--full {
+	position: absolute;
+	left: 1vw;
+	top: 3vw;
+	transform: rotate(-45deg);
+}
+
+.logo::before {
+	content: '';
+	display: block;
+	width: 2.2vw;
+	height: 2.2vw;
+	border-radius: 50%;
+	background-color: #4CAF50;
+	margin-left: 3vw;
+}
+
+.logo::after {
+	content: '';
+	display: block;
+	width: 2.2vw;
+	height: 2.2vw;
+	border-radius: 50%;
+	background-color: #FFEB3B;
+	margin-top: 1vw;
+}
+
+.small-nav {
+	width: 22vw;
+	height: 22vw;
+	border-radius: 50%;
+	background-color: #555555;
+	position: fixed;
+	top: -11vw;
+	left: -11vw;
+}
+
+.small-nav__box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding-left: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+.small-nav__logo {
+	width: 2.2vw;
+	height: 2.2vw;
+	border-radius: 50%;
+	background-color: #f44336;
+}
+
+.small-nav__logo::before {
+	content: '';
+	display: block;
+	width: 2.2vw;
+	height: 2.2vw;
+	border-radius: 50%;
+	background-color: #4CAF50;
+	margin-left: 3vw;
+}
+
+.small-nav__logo::after {
+	content: '';
+	display: block;
+	width: 2.2vw;
+	height: 2.2vw;
+	border-radius: 50%;
+	background-color: #FFEB3B;
+	margin-top: 0.6vw;
+}
+
+.small-nav--ishidden {
+	display: none;
+}
+
 .app {
 	max-width: 1000px;
 	height: 200vh;
@@ -21,61 +151,8 @@ html, ::before, ::after {
 	padding-top: 3vh;
 }
 
-.header {
-	width: 100%;
-	max-height: 8vh;
-	position: absolute;
-}
-
-.header--ishidden {
-	//left: -100vw;
-}
-
-.header__wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1000px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2rem 2rem 1rem 2rem;
-	background-color: #ffffff;
-}
-
-.header__logo {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.1rem;
-	letter-spacing: 0.3rem;
-	text-transform: uppercase;
-	width: 40%;
-}
-
-.header__link {
-	display: block;
-	text-decoration: none;
-	color: #555555;
-}
-
-.header__nav {
-
-}
-
-.nav{
-	width: 60%;
-	//padding: 0 2rem;
-	display: flex;
-	justify-content: space-around;
-}
-
-.nav__link {
-	color: #555555;
-	font-size: 2.5rem;
-	text-decoration: none;
-}
-
 .players-stat {
 	width: 100vw;
-	//padding: 0 0.5rem;
 }
 
 .players-stat__header {
