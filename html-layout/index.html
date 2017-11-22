@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Volleystat app</title>
 	<script src="https://use.fontawesome.com/65e9221680.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header class="header ">
+	<!-- <header class="header header--ishidden">
 		<div class="header__wrapper">
 			<div class="header__logo">
 				<a href="#" class="header__link">
@@ -36,27 +37,21 @@
 				</a>
 			</nav>
 		</div>
-	</header>
+	</header> -->
 	<div class="app" id="app">
 		<section class="players-stat">
 			<header class="players-stat__header">
 				<div class="players-stat__activity">inning</div>
 				<div class="players-stat__activity">defense</div>
-				<div class="players-stat__activity">block</div>
 				<div class="players-stat__activity">attack</div>
 				<div class="players-stat__activity">pass</div>
 			</header>
 			<div class="players-stat__players">
 				<div class="player player--ingame">
 					<div class="player__name">
-						Вася Пупкин
+						Сатыбалдиева Асель
 					</div>
 					<div class="player__stats">
-						<div class="stat">
-							<div class="stat__item stat__item--good">123</div>
-							<div class="stat__item stat__item--normal">123</div>
-							<div class="stat__item stat__item--bad">123</div>
-						</div>
 						<div class="stat">
 							<div class="stat__item stat__item--good">123</div>
 							<div class="stat__item stat__item--normal">123</div>
@@ -104,11 +99,6 @@
 							<div class="stat__item stat__item--normal">123</div>
 							<div class="stat__item stat__item--bad">123</div>
 						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">123</div>
-							<div class="stat__item stat__item--normal">123</div>
-							<div class="stat__item stat__item--bad">123</div>
-						</div>
 					</div>
 				</div>
 				<div class="player player--ingame">
@@ -116,43 +106,6 @@
 						Вася Пупкин
 					</div>
 					<div class="player__stats">
-						<div class="stat">
-							<div class="stat__item stat__item--good">123</div>
-							<div class="stat__item stat__item--normal">123</div>
-							<div class="stat__item stat__item--bad">123</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">123</div>
-							<div class="stat__item stat__item--normal">123</div>
-							<div class="stat__item stat__item--bad">123</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">123</div>
-							<div class="stat__item stat__item--normal">123</div>
-							<div class="stat__item stat__item--bad">123</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">123</div>
-							<div class="stat__item stat__item--normal">123</div>
-							<div class="stat__item stat__item--bad">123</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">123</div>
-							<div class="stat__item stat__item--normal">123</div>
-							<div class="stat__item stat__item--bad">123</div>
-						</div>
-					</div>
-				</div>
-				<div class="player player--ingame">
-					<div class="player__name">
-						Вася Пупкин
-					</div>
-					<div class="player__stats">
-						<div class="stat">
-							<div class="stat__item stat__item--good">123</div>
-							<div class="stat__item stat__item--normal">123</div>
-							<div class="stat__item stat__item--bad">123</div>
-						</div>
 						<div class="stat">
 							<div class="stat__item stat__item--good">123</div>
 							<div class="stat__item stat__item--normal">123</div>
@@ -200,11 +153,6 @@
 							<div class="stat__item stat__item--normal">123</div>
 							<div class="stat__item stat__item--bad">123</div>
 						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">123</div>
-							<div class="stat__item stat__item--normal">123</div>
-							<div class="stat__item stat__item--bad">123</div>
-						</div>
 					</div>
 				</div>
 				<div class="player player--ingame">
@@ -217,6 +165,28 @@
 							<div class="stat__item stat__item--normal">123</div>
 							<div class="stat__item stat__item--bad">123</div>
 						</div>
+						<div class="stat">
+							<div class="stat__item stat__item--good">123</div>
+							<div class="stat__item stat__item--normal">123</div>
+							<div class="stat__item stat__item--bad">123</div>
+						</div>
+						<div class="stat">
+							<div class="stat__item stat__item--good">123</div>
+							<div class="stat__item stat__item--normal">123</div>
+							<div class="stat__item stat__item--bad">123</div>
+						</div>
+						<div class="stat">
+							<div class="stat__item stat__item--good">123</div>
+							<div class="stat__item stat__item--normal">123</div>
+							<div class="stat__item stat__item--bad">123</div>
+						</div>
+					</div>
+				</div>
+				<div class="player player--ingame">
+					<div class="player__name">
+						Вася Пупкин
+					</div>
+					<div class="player__stats">
 						<div class="stat">
 							<div class="stat__item stat__item--good">123</div>
 							<div class="stat__item stat__item--normal">123</div>
@@ -275,5 +245,5 @@ spa на react
 конец партии - ввод итогового счета партии
 создание новой партии, всего может быть 5 партий
 очистить результаты (стирается все: и игроки и их статистика)
-
+По каждому игроку учитывать время на поле (считать время или нет - опционально, т.к. с приложением можно работать не только вжиую на игре, но и обрабатывать видеозапись)
 -->
