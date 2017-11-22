@@ -28,7 +28,7 @@ html, ::before, ::after {
 }
 
 .header--ishidden {
-	top: -8.5vh;
+	left: -100vw;
 }
 
 .header__wrapper {
@@ -71,19 +71,6 @@ html, ::before, ::after {
 	color: #555555;
 	font-size: 2.5rem;
 	text-decoration: none;
-}
-
-.infolog {
-	min-height: 2vh;
-	max-height: 3vh;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	font-style: italic;
-	background-color: #555555;
-	color: #ffffff;
-	width: 100%;
-	font-size: 1.5rem;
-	padding: 0.6vh;
 }
 
 .players-stat {
