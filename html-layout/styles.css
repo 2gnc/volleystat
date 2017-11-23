@@ -34,105 +34,6 @@ html, ::before, ::after {
 	justify-content: space-between;
 }
 
-.full-nav__input {
-	display: none;
-}
-
-.full-nav__new-player {
-	display: flex;
-	flex-wrap: wrap;
-	text-transform: capitalize;
-	font-weight: 400;
-	font-size: 1rem;
-}
-
-.full-nav__submenu-row {
-	height: 13.33vh;
-	width: 80vw;
-}
-
-.full-nav__submenu-row--name {
-	display: flex;
-	align-items: center;
-	hieght: 6vh;
-}
-
-.full-nav__input--text {
-	border: none;
-	background-color: rgba(0, 0, 0, 0.9);
-	margin-left: 2rem;
-	border-bottom: 1px solid #ffffff;
-	width: 55vw;
-	height: 3rem;
-	color: #FFEB3B;
-	font-size: 2rem;
-	font-weight: 400;
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-transform: capitalize;
-}
-
-.full-nav__heading {
-	width: 80vw;
-}
-
-.full-nav__submenu-row--role {
-	height: 20.6vh;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-.full-nav__input-role {
-	display: none;
-}
-
-.full-nav__submenu-row--type {
-	display: flex;
-	justify-content: space-around;
-}
-
-.full-nav__status {
-	box-sizing: border-box;
-	outline: 1px solid #ffffff;
-	width: 30vw;
-	height: 8vw;
-	line-height: 8vw;
-}
-
-.full-nav__status--checked {
-	color: #FFEB3B;
-	outline-color: #FFEB3B;
-}
-
-.full-nav__role {
-	box-sizing: border-box;
-	outline: 1px solid #ffffff;
-	width: 14vw;
-	max-width: 14vw;
-	height: 14vw;
-	max-height: 14vw;
-	font-size: 0.8rem;
-	font-family: 'Open Sans Condensed', sans-serif;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0.5rem;
-}
-
-.full-nav__role--checked {
-	color: #FFEB3B;
-	outline-color: #FFEB3B;
-}
-
-.full-nav__input--text:active {
-	outline: none;
-}
-
-.full-nav__input--text:focus {
-	outline: none;
-	border-bottom-color: #FFEB3B;
-}
-
 .full-nav__item {
 	color: #ffffff;
 	text-transform: uppercase;
@@ -151,6 +52,125 @@ html, ::before, ::after {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+}
+
+.full-nav__input {
+	display: none;
+}
+
+.full-nav__input:checked ~ .full-nav__submenu{
+	height: 40vh;
+	transform: scale(1);
+}
+
+.full-nav__input:checked ~ .full-nav__item{
+	color: #FFEB3B;
+}
+
+.new-player {
+	display: flex;
+	flex-wrap: wrap;
+	text-transform: capitalize;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.new-player__row {
+	width: 80vw;
+	display: flex;
+	align-items: center;
+	hieght: 6vh;
+}
+
+.new-player__row--name {
+	height: 5vh;
+}
+
+.new-player__input {
+	border: none;
+	background-color: rgba(0, 0, 0, 0.9);
+	margin-left: 2rem;
+	border-bottom: 1px solid #ffffff;
+	width: 55vw;
+	height: 3rem;
+	color: #FFEB3B;
+	font-size: 2rem;
+	font-weight: 400;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: capitalize;
+}
+
+.new-player__input--text:active {
+	outline: none;
+}
+
+.new-player__input--text:focus {
+	outline: none;
+	border-bottom-color: #FFEB3B;
+}
+
+.new-player__row--role {
+	height: 21vh;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.new-player__heading {
+	width: 80vw;
+}
+
+.new-player__role {
+	box-sizing: border-box;
+	outline: 1px solid #ffffff;
+	width: 14vw;
+	max-width: 14vw;
+	height: 14vw;
+	max-height: 14vw;
+	font-size: 0.8rem;
+	font-family: 'Open Sans Condensed', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem;
+}
+
+.new-player__role--checked {
+	color: #FFEB3B;
+	outline-color: #FFEB3B;
+}
+
+.new-player__row--type {
+	justify-content: space-around;
+}
+
+.new-player__status {
+	box-sizing: border-box;
+	outline: 1px solid #ffffff;
+	width: 30vw;
+	height: 8vw;
+	line-height: 8vw;
+}
+
+.new-player__status--checked {
+	color: #FFEB3B;
+	outline-color: #FFEB3B;
+}
+
+.new-player__row--ok {
+	height: 11vh;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.new-player__ok {
+	width: 50%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	background-color: transparent;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	text-transform: uppercase;
+	font-size: 1rem;
 }
 
 .full-nav__players {
@@ -174,18 +194,11 @@ html, ::before, ::after {
 	margin: 0.3rem;
 }
 
-.full-nav__input:checked ~ .full-nav__submenu{
-	height: 40vh;
-	transform: scale(1);
-}
-
-.full-nav__input:checked ~ .full-nav__item{
-	color: #FFEB3B;
-}
-
 .full-nav__submenu-item {
 	height: 10vh;
 	line-height: 10vh;
+	font-weight: 400;
+	font-size: 1rem;
 }
 
 .full-nav--ishidden {

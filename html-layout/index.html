@@ -20,29 +20,32 @@
 					<input type="radio" class="full-nav__input" id="inp1" name="inputs">
 					<label for="inp1" class="full-nav__item">add player</label>
 					<div class="full-nav__submenu">
-						<div class="full-nav__new-player">
-							<div class="full-nav__submenu-row full-nav__submenu-row--name">
+						<div class="new-player">
+							<div class="new-player__row new-player__row--name">
 								<label for="playerName">name:</label>
-								<input type="text" id="playerName" class="full-nav__input--text">
+								<input type="text" id="playerName" class="new-player__input new-player__input--text">
 							</div>
-							<div class="full-nav__submenu-row full-nav__submenu-row--role">
-								<p class="full-nav__heading">role:</p>
-								<input type="checkbox" id="isLibero" class="full-nav__input-role">
-								<input type="checkbox" id="isSetter" class="full-nav__input-role">
-								<input type="checkbox" id="isOutsideH" class="full-nav__input-role">
-								<input type="checkbox" id="isWeeksideH" class="full-nav__input-role">
-								<input type="checkbox" id="isMiddleB" class="full-nav__input-role">
-								<label for="isLibero" class="full-nav__role full-nav__role--checked">libero</label>
-								<label for="isSetter" class="full-nav__role">setter</label>
-								<label for="isOutsideH" class="full-nav__role">outside hitter</label>
-								<label for="isWeeksideH" class="full-nav__role">weekside hitter</label>
-								<label for="isMiddleB" class="full-nav__role">middle blocker</label>
+							<div class="new-player__row new-player__row--role">
+								<p class="new-player__heading">role:</p>
+								<input type="checkbox" id="isLibero" class="full-nav__input">
+								<input type="checkbox" id="isSetter" class="full-nav__input">
+								<input type="checkbox" id="isOutsideH" class="full-nav__input">
+								<input type="checkbox" id="isWeeksideH" class="full-nav__input">
+								<input type="checkbox" id="isMiddleB" class="full-nav__input">
+								<label for="isLibero" class="new-player__role new-player__role--checked">libero</label>
+								<label for="isSetter" class="new-player__role">setter</label>
+								<label for="isOutsideH" class="new-player__role">outside hitter</label>
+								<label for="isWeeksideH" class="new-player__role">weekside hitter</label>
+								<label for="isMiddleB" class="new-player__role">middle blocker</label>
 							</div>
-							<div class="full-nav__submenu-row full-nav__submenu-row--type">
+							<div class="new-player__row new-player__row--type">
 								<input type="radio" name="role" id="isField" checked class="full-nav__input">
 								<input type="radio" name="role" id="isReserve" class="full-nav__input">
-								<label for="isField" class="full-nav__status">field player</label>
-								<label for="isReserve" class="full-nav__status full-nav__status--checked">reserve player</label>
+								<label for="isField" class="new-player__status">field player</label>
+								<label for="isReserve" class="new-player__status new-player__status--checked">reserve player</label>
+							</div>
+							<div class="new-player__row new-player__row--ok">
+								<button class="new-player__ok" id="newPlayerConfirm">save</button>
 							</div>
 						</div>
 					</div>
@@ -74,8 +77,11 @@
 					</div>
 				</div>
 				<div class="full-nav__item" id="clearall">
-					<input type="radio" class="full-nav__input" id="inp4" name="inputs" disabled>
-					<label for="inp4" class="full-nav__item">results management</label> <!-- тут можно сохранить результаты или очистить данные -->
+					<input type="radio" class="full-nav__input" id="inp4" name="inputs">
+					<label for="inp4" class="full-nav__item">results management</label>
+					<div class="full-nav__submenu">
+						<div class="full-nav__submenu-item" id="langru">crear results</div>
+					</div>
 				</div>
 				<div class="full-nav__item" id="setlang">
 					<input type="radio" class="full-nav__input" id="inp5" name="inputs">
