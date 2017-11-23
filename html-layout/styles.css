@@ -406,6 +406,7 @@ html, ::before, ::after {
 	background-color: #f44336;
 }
 
+
 @media screen and (orientation:portrait) and (max-height: 1024px) {
 	.full-nav__player {
 		width: 17vw;
@@ -413,7 +414,7 @@ html, ::before, ::after {
 	}
 }
 
-@media screen and (orientation:portrait) and (max-width: 1024px) {
+@media screen and (orientation:portrait) and (min-width: 768px) {
 	.full-nav__item {
 		font-size: 2rem;
 	}
