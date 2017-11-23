@@ -137,7 +137,6 @@ html, ::before, ::after {
 
 .new-player__role {
 	width: 14vw;
-	max-width: 14vw;
 	height: 14vw;
 	max-height: 14vw;
 	box-sizing: border-box;
@@ -406,11 +405,85 @@ html, ::before, ::after {
 	background-color: #f44336;
 }
 
+@media screen and (orientation:landscape) and (max-height: 375px) and (min-height: 320px) {
+	.full-nav__box {
+		position: absolute;
+		bottom: 7vh;
+	}
+	.full-nav__item {
+		font-size: 1rem;
+	}
+	.new-player__input {
+		font-size: 1rem;
+	}
+	.new-player__col {
+		display: flex;
+	}
+	.new-player__row--name {
+		width: 40vw;
+	}
+	.new-player__row--role {
+		width: 40vw;
+		height: 40vh;
+	}
+	.new-player__role {
+		width: 16vw;
+		height: 5vh;
+	}
+	.new-player__row--type {
+		position: relative;
+		top: -28vh;
+		width: 40vw;
+	}
+	.new-player__status {
+		box-sizing: border-box;
+		width: 15vw;
+		height: 10vh;
+		outline: none;
+		line-height: 10vh;
+	}
+	.new-player__row--ok {
+		width: 40vw;
+		position: relative;
+		left: -40vw;
+		top: -13vh;
+		justify-content: center;
+	}
+	.full-nav__player {
+		height: 6.5vh;
+	}
+}
+@media screen and (orientation:landscape) and (max-height: 767px) and (min-height: 375px){
+	.full-nav__item {
+		font-size: 1.2rem;
+	}
+	.new-player__input {
+		font-size: 1rem;
+	}
+	.new-player__role {
+		height: 6vh;
+		font-size: 1rem;
+	}
+	.new-player__status {
+		width: 30vw;
+		height: 6vh;
+		line-height: 6vh;
+	}
+	.new-player__ok {
+		width: 50%;
+		padding: 0.2rem;
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+	}
+	.full-nav__player {
+		height: 7vh;
+	}
+}
 
 @media screen and (orientation:portrait) and (max-height: 1024px) {
 	.full-nav__player {
-		width: 17vw;
-		height: 8vh;
+		width: 20vw;
+		height: 6.3vh;
 	}
 }
 
@@ -449,7 +522,7 @@ html, ::before, ::after {
 	}
 }
 
-@media screen and (orientation:landscape) and (max-height: 1366px) {
+@media screen and (orientation:landscape) and (min-height: 768px) {
 	.infopanel {
 		height: 3rem;
 		font-size: 1.5rem;
