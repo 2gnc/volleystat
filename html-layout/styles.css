@@ -209,6 +209,12 @@ html, ::before, ::after {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.full-nav__player-isReserve {
+	border-color: #f44336;
+	color: #f44336;
+}
+
+
 .full-nav__submenu-item {
 	height: 10vh;
 	line-height: 10vh;
