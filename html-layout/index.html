@@ -15,6 +15,11 @@
 		</nav>
 		<nav class="full-nav">
 			<div class="logo logo--full"></div>
+			<div class="infopanel">
+				<div class="infopanel__section" id="username">UserName</div>
+				<div class="infopanel__section" id="login">logout</div>
+				<div class="infopanel__section" id="matchInfo">round: 2</div>
+			</div>
 			<div class="full-nav__box">
 				<div class="full-nav__item" id="newplayer">
 					<input type="radio" class="full-nav__input" id="inp1" name="inputs">
@@ -80,7 +85,8 @@
 					<input type="radio" class="full-nav__input" id="inp4" name="inputs">
 					<label for="inp4" class="full-nav__item">results management</label>
 					<div class="full-nav__submenu">
-						<div class="full-nav__submenu-item" id="langru">crear results</div>
+						<div class="full-nav__submenu-item full-nav__submenu-item--warning" id="langru">clear this match results</div>
+						<div class="full-nav__submenu-item" id="langru">end match and save results</div>
 					</div>
 				</div>
 				<div class="full-nav__item" id="setlang">
@@ -93,7 +99,7 @@
 				</div>
 				<div class="full-nav__item" id="stats">
 					<input type="radio" class="full-nav__input" id="inp6" name="inputs" disabled>
-					<label for="inp6" class="full-nav__item">view statistics</label>
+					<label for="inp6" class="full-nav__item">view match statistics</label>
 				</div>
 				<div class="full-nav__item" id="help">
 					<input type="radio" class="full-nav__input" id="inp7" name="inputs" disabled>
