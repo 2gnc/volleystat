@@ -53,7 +53,7 @@ html, ::before, ::after {
 	color: #ffffff;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	text-align: center;
 }
 
@@ -99,20 +99,21 @@ html, ::before, ::after {
 
 .new-player__row--name {
 	height: 5vh;
+	justify-content: center;
 }
 
 .new-player__input {
 	width: 55vw;
-	height: 3rem;
 	margin-left: 2rem;
 	border: none;
 	border-bottom: 1px solid #ffffff;
 	background-color: rgba(0, 0, 0, 0.9);
 	color: #FFEB3B;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: capitalize;
+	text-align: center;
 }
 
 .new-player__input--text:active {
@@ -125,7 +126,7 @@ html, ::before, ::after {
 }
 
 .new-player__row--role {
-	height: 21vh;
+	height: 19vh;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
@@ -405,3 +406,85 @@ html, ::before, ::after {
 	background-color: #f44336;
 }
 
+@media screen and (orientation:portrait) and (max-width: 1024px) {
+	.full-nav__item {
+		font-size: 2rem;
+	}
+
+	.new-player {
+		font-size: 1.5rem;
+	}
+
+	.new-player__role {
+		font-size: 1.5rem;
+	}
+
+	.new-player__row--type {
+		height: 12vh;
+	}
+
+	.new-player__row--ok {
+		height: 6vh;
+	}
+
+	.new-player__ok {
+		padding: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.full-nav__player {
+		font-size: 1.5rem;
+	}
+
+	.full-nav__submenu-item {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (orientation:landscape) and (max-height: 1366px) {
+	.infopanel {
+		height: 3rem;
+		font-size: 1.5rem;
+	}
+
+	.full-nav__item {
+		font-size: 2rem;
+	}
+
+	.new-player {
+		font-size: 1.5rem;
+	}
+
+	.new-player__role {
+		width: 16vh;
+		max-width: 16vh;
+		height: 8vh;
+		max-height: 8vh;
+		font-size: 1.5rem;
+	}
+
+	.new-player__status {
+		width: 30vw;
+		height: 6vh;
+		line-height: 6vh;
+	}
+
+	.new-player__row--type {
+		height: 10vh;
+	}
+
+	.new-player__row--ok {
+		height: 6vh;
+	}
+
+	.full-nav__player {
+		width: 13vh;
+		height: 13vh;
+		font-size: 1.5rem;
+	}
+
+	.full-nav__submenu-item {
+		font-size: 1.5rem;
+	}
+
+}
