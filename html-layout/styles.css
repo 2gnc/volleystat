@@ -41,6 +41,11 @@ html, ::before, ::after {
 	opacity: 0.9;
 }
 
+
+.full-nav--ishidden {
+	display: none;
+}
+
 .full-nav__box {
 	width: 80vw;
 	height: 80vh;
@@ -226,10 +231,6 @@ html, ::before, ::after {
 	color: #f44336;
 }
 
-.full-nav--ishidden {
-	display: none;
-}
-
 .logo {
 	position: absolute;
 	width: 2.2vw;
@@ -322,7 +323,6 @@ html, ::before, ::after {
 }
 
 .app {
-	max-width: 1000px;
 	height: 200vh;
 	margin: 0 auto;
 	padding-top: 3vh;
@@ -529,6 +529,7 @@ html, ::before, ::after {
 }
 
 @media screen and (orientation:landscape) and (min-height: 768px) {
+
 	.infopanel {
 		height: 3rem;
 		font-size: 1.5rem;
@@ -574,4 +575,43 @@ html, ::before, ::after {
 		font-size: 1.5rem;
 	}
 
+}
+
+@media screen and (orientation: landscape) {
+	.small-nav {
+		top: -11vh;
+		left: -11vh;
+		width: 22vh;
+		height: 22vh;
+	}
+
+	.logo {
+		position: absolute;
+		width: 2.2vh; 
+		height: 2.2vh; 
+		margin-left: 0.5rem;
+		margin-top: 0.5rem;
+		border-radius: 50%;
+		background-color: #f44336;
+	}
+
+	.logo::before {
+		content: '';
+		width: 2.2vh; 
+		height: 2.2vh; 
+		margin-left: 3vh;
+		border-radius: 50%;
+		display: block;
+		background-color: #4CAF50;
+	}
+
+.logo::after {
+		content: '';
+		width: 2.2vh; 
+		height: 2.2vh; 
+		margin-top: 1vh;
+		border-radius: 50%;
+		display: block;
+		background-color: #FFEB3B;
+	}
 }
