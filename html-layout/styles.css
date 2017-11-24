@@ -1,7 +1,7 @@
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Open Sans Condensed', sans-serif;
+/*// font-family: 'Roboto', sans-serif;*/
+/*// font-family: 'Open Sans Condensed', sans-serif;*/
 
-html, ::before, ::after {
+html {
 	font-size: 16px;
 }
 
@@ -39,10 +39,11 @@ html, ::before, ::after {
 }
 
 .infopanel--welcome {
+	position: fixed;
 	width: 100vw;
-	height: 3.5vh;
+	padding: 0.5rem 0 0.2rem 0;
 	color: #ffffff;
-	background-color: #555555;
+	background-color: #000000;
 	justify-content: flex-end;
 }
 
@@ -80,7 +81,7 @@ html, ::before, ::after {
 
 .full-nav__submenu {
 	width: 100%;
-	height: 0vh;
+	height: 0;
 	transform: scale(0);
 	display: flex;
 	flex-direction: column;
@@ -297,7 +298,7 @@ html, ::before, ::after {
 	width: 22vw;
 	height: 22vw;
 	border-radius: 50%;
-	background-color: #555555;
+	background-color: #000000;
 }
 
 .small-nav__box {
@@ -429,13 +430,12 @@ html, ::before, ::after {
 
 .welcome__section {
 	width: 100vw;
-	padding: 2rem;
+	padding: 1rem;
 	box-sizing: border-box;
 	text-align: center;
 }
 
 .welcome__section--first {
-	height: 100vh;
 	color: #ffffff;
 	background-image: url('img/bg1.jpg');
 	background-size: cover;
@@ -447,18 +447,35 @@ html, ::before, ::after {
 
 .welcome__header {
 	padding-bottom: 1rem;
-	font-size: 1.7rem;
+	font-size: 8.0vw;
 }
 
 .welcome__text {
 	padding-bottom: 1rem;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	line-height: 1.8rem;
 }
 
 .welcome__button {
+	margin-right: 2vw;
+	padding: 1rem;
+	border: none;
+	border-radius: 3rem;
+	color: #555555;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
 
+.welcome__button--getstarted {
+	margin-right: 0;
+	background-color: #4caf50;
+	color: #ffffff;
+}
+
+.welcome__button:focus {
+	outline: none;
 }
 
 .welcome__screenshot {
@@ -468,6 +485,29 @@ html, ::before, ::after {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+}
+
+.features {
+
+}
+
+.features__item {
+	padding: 1.5rem 0;
+}
+
+.features__icon {
+	display: block;
+	color: #4caf50;
+	font-size: 2.5rem;
+}
+
+.welcome__subheader {
+	padding-top: 1rem;
+	font-weight: bold;
+}
+
+.features__desc {
+	padding-top: 1rem;
 }
 
 /* Welcome interface selectors end */
