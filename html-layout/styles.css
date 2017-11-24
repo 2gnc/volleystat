@@ -10,6 +10,14 @@ html, ::before, ::after {
 	padding: 0;
 }
 
+.app {
+	height: 200vh;
+	margin: 0 auto;
+	padding-top: 3vh;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #555555;
+}
+
 .header {
 	position: absolute;
 }
@@ -19,14 +27,27 @@ html, ::before, ::after {
 	top: 0;
 	right: 0;
 	width: 70vw;
-	height: 3rem;
+	height: 3vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	color: #4CAF50;
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1rem;
+	font-size: 0.8rem;
+	line-height: 3vh;
 	text-transform: capitalize;
+}
+
+.infopanel--welcome {
+	width: 100vw;
+	height: 3.5vh;
+	color: #ffffff;
+	background-color: #555555;
+	justify-content: flex-end;
+}
+
+.infopanel__section {
+	width: 30vw;
 }
 
 .full-nav {
@@ -39,11 +60,6 @@ html, ::before, ::after {
 	align-items: center;
 	background-color: #000000;
 	opacity: 0.9;
-}
-
-
-.full-nav--ishidden {
-	display: none;
 }
 
 .full-nav__box {
@@ -275,6 +291,7 @@ html, ::before, ::after {
 
 .small-nav {
 	position: fixed;
+	z-index: 2;
 	top: -11vw;
 	left: -11vw;
 	width: 22vw;
@@ -318,16 +335,8 @@ html, ::before, ::after {
 	background-color: #FFEB3B;
 }
 
-.small-nav--ishidden {
+.ishidden {
 	display: none;
-}
-
-.app {
-	height: 200vh;
-	margin: 0 auto;
-	padding-top: 3vh;
-	font-family: 'Open Sans Condensed', sans-serif;
-	color: #555555;
 }
 
 .players-stat {
@@ -372,6 +381,7 @@ html, ::before, ::after {
 	align-items: center;
 	overflow: hidden;
 	text-decoration: underline dotted;
+	text-transform: capitalize;
 	word-break: break-all;
 	font-size: 0.8rem;
 }
@@ -410,6 +420,57 @@ html, ::before, ::after {
 .stat__item--bad {
 	background-color: #f44336;
 }
+
+/* Welcome interface selectors begin */
+
+.welcome {
+	width: 100vw;
+}
+
+.welcome__section {
+	width: 100vw;
+	padding: 2rem;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.welcome__section--first {
+	height: 100vh;
+	color: #ffffff;
+	background-image: url('img/bg1.jpg');
+	background-size: cover;
+}
+
+.welcome__content {
+
+}
+
+.welcome__header {
+	padding-bottom: 1rem;
+	font-size: 1.7rem;
+}
+
+.welcome__text {
+	padding-bottom: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+.welcome__button {
+
+}
+
+.welcome__screenshot {
+	height: 60vh;
+	margin-top: 1rem;
+	background-image: url('img/screenshot.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+/* Welcome interface selectors end */
 
 @media screen and (orientation:landscape) and (max-height: 375px) and (min-height: 320px) {
 	.full-nav__box {
