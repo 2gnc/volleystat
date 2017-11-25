@@ -422,7 +422,7 @@ html {
 	background-color: #f44336;
 }
 
-/* Welcome interface selectors begin */
+/* Welcome start */
 
 .welcome {
 	width: 100vw;
@@ -486,7 +486,9 @@ html {
 	background-size: contain;
 	background-position: center;
 }
+/* Welcome end */
 
+/* Features start*/
 .features {
 
 }
@@ -509,8 +511,64 @@ html {
 .features__desc {
 	padding-top: 1rem;
 }
+/* Features end  */
 
-/* Welcome interface selectors end */
+/* Timeline start*/
+
+.timeline {
+	width: 95%;
+	margin: 2rem auto;
+	box-sizing: border-box;
+	list-style-type: none;
+}
+
+.timeline__item {
+	position: relative;
+	text-align: left;
+}
+
+.timeline__number {
+	position: absolute;
+	top: 0;
+	left: -0.75rem;
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	background-color: #4caf50;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+.timeline__content {
+	position: relative;
+	top: -0.75rem;
+	margin-left: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.timeline__heading {
+	padding-bottom: 0.5rem;
+}
+
+.timeline__desc {
+	text-align: justify;
+}
+
+.timeline__box {
+	position: relative;
+	box-sizing: border-box;
+	padding-top: 0.5rem;
+	padding-left: 1rem;
+	border-left: 1px solid #4caf50;
+}
+
+.timeline__box--last {
+	border-left: none;
+}
+
+/* Timeline end */
 
 @media screen and (orientation:landscape) and (max-height: 375px) and (min-height: 320px) {
 	.full-nav__box {
