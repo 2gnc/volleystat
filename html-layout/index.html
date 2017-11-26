@@ -111,7 +111,7 @@
 		</nav>
 	</header>
 	<div class="app" id="app">
-		<section class="players-stat ishidden">
+		<section class="players-stat">
 			<header class="players-stat__header">
 				<div class="players-stat__activity">inning</div>
 				<div class="players-stat__activity">defense</div>
@@ -144,6 +144,15 @@
 							<div class="stat__item stat__item--normal">0</div>
 							<div class="stat__item stat__item--bad">0</div>
 						</div>
+					</div>
+				</div>
+				<div class="results__parameters ishidden">
+					<div class="results__parameter">Overall eff.</div>
+					<div class="results__values">
+						<div class="results__value">0%</div>
+						<div class="results__value">0%</div>
+						<div class="results__value">0%</div>
+						<div class="results__value">0%</div>
 					</div>
 				</div>
 				<div class="player player--ingame">
@@ -283,7 +292,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="welcome">
+		<section class="welcome ishidden    ">
 			<div class="infopanel infopanel--welcome">
 				<div class="infopanel__section" id="username">anonymous</div>
 				<div class="infopanel__section" id="login">sign in / sign up</div>
@@ -334,7 +343,7 @@
 			</section>
 			<section class="welcome__section">
 				<h2 class="welcome__header">Getting started</h2>
-				<p class="">
+				<p class="welcome__intro">
 					Volley Stats is intuitive and very easy to use. Collect your team`s statistics in 5 easy steps:
 				</p>
 				<ul class="timeline">
@@ -394,7 +403,7 @@
 			</section>
 			<section class="welcome__section">
 				<h2 class="welcome__header">Feedback</h2>
-				<p class="">
+				<p  class="welcome__intro">
 					If you notice an error, or if you have suggestions for improving the service,
 					or if something seems uncomfortable and you would like to change it - please contact the developer:
 				</p>
@@ -404,7 +413,7 @@
 					<label for="feedbackEmail" class="feedback__label">Email:</label>
 					<input type="email" id="feedbackEmail" placeholder="Your email" class="feedback__text">
 					<label for="feedbackMsg" class="feedback__label">Message:</label>
-					<input type="text" id="feedbackMsg" class="feedback__message">
+					<textarea type="text" id="feedbackMsg" class="feedback__text" rows="5"></textarea>
 					<button class="welcome__button welcome__button--getstarted">Send message</button>
 				</form>
 			</section>
