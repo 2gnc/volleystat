@@ -972,11 +972,7 @@ var App = function (_React$Component) {
 	_createClass(App, [{
 		key: 'render',
 		value: function render() {
-			return _react2.default.createElement(
-				'h1',
-				null,
-				'Volley Stats app'
-			);
+			return _react2.default.createElement('div', { className: "app" });
 		}
 	}]);
 
