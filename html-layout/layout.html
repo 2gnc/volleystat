@@ -9,416 +9,418 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header class="header">
-		<nav class="small-nav">
-			<div class="logo logo--small"></div>
-		</nav>
-		<nav class="full-nav ishidden">
-			<div class="logo logo--full"></div>
-			<div class="infopanel">
-				<div class="infopanel__section" id="username">UserName</div>
-				<div class="infopanel__section" id="login">logout</div>
-				<div class="infopanel__section" id="matchInfo">round: 2</div>
-			</div>
-			<div class="full-nav__box">
-				<div class="full-nav__item" id="newplayer">
-					<input type="radio" class="full-nav__input" id="inp1" name="inputs">
-					<label for="inp1" class="full-nav__item">add player</label>
-					<div class="full-nav__submenu">
-						<div class="new-player">
-							<div class="new-player__col">
-								<div class="new-player__row new-player__row--name">
-									<label for="playerName">name:</label>
-									<input type="text" id="playerName" class="new-player__input new-player__input--text">
+	<div id="react">
+		<header class="header">
+			<nav class="small-nav">
+				<div class="logo logo--small"></div>
+			</nav>
+			<nav class="full-nav ishidden">
+				<div class="logo logo--full"></div>
+				<div class="infopanel">
+					<div class="infopanel__section" id="username">UserName</div>
+					<div class="infopanel__section" id="login">logout</div>
+					<div class="infopanel__section" id="matchInfo">round: 2</div>
+				</div>
+				<div class="full-nav__box">
+					<div class="full-nav__item" id="newplayer">
+						<input type="radio" class="full-nav__input" id="inp1" name="inputs">
+						<label for="inp1" class="full-nav__item">add player</label>
+						<div class="full-nav__submenu">
+							<div class="new-player">
+								<div class="new-player__col">
+									<div class="new-player__row new-player__row--name">
+										<label for="playerName">name:</label>
+										<input type="text" id="playerName" class="new-player__input new-player__input--text">
+									</div>
+									<div class="new-player__row new-player__row--role">
+										<p class="new-player__heading">role:</p>
+										<input type="checkbox" id="isLibero" class="full-nav__input">
+										<input type="checkbox" id="isSetter" class="full-nav__input">
+										<input type="checkbox" id="isOutsideH" class="full-nav__input">
+										<input type="checkbox" id="isWeeksideH" class="full-nav__input">
+										<input type="checkbox" id="isMiddleB" class="full-nav__input">
+										<label for="isLibero" class="new-player__role new-player__role--checked">libero</label>
+										<label for="isSetter" class="new-player__role">setter</label>
+										<label for="isOutsideH" class="new-player__role">outside hitter</label>
+										<label for="isWeeksideH" class="new-player__role">weekside hitter</label>
+										<label for="isMiddleB" class="new-player__role">middle blocker</label>
+									</div>
 								</div>
-								<div class="new-player__row new-player__row--role">
-									<p class="new-player__heading">role:</p>
-									<input type="checkbox" id="isLibero" class="full-nav__input">
-									<input type="checkbox" id="isSetter" class="full-nav__input">
-									<input type="checkbox" id="isOutsideH" class="full-nav__input">
-									<input type="checkbox" id="isWeeksideH" class="full-nav__input">
-									<input type="checkbox" id="isMiddleB" class="full-nav__input">
-									<label for="isLibero" class="new-player__role new-player__role--checked">libero</label>
-									<label for="isSetter" class="new-player__role">setter</label>
-									<label for="isOutsideH" class="new-player__role">outside hitter</label>
-									<label for="isWeeksideH" class="new-player__role">weekside hitter</label>
-									<label for="isMiddleB" class="new-player__role">middle blocker</label>
+								<div class="new-player__row new-player__row--type">
+									<input type="radio" name="role" id="isField" checked class="full-nav__input">
+									<input type="radio" name="role" id="isReserve" class="full-nav__input">
+									<label for="isField" class="new-player__status">field</label>
+									<label for="isReserve" class="new-player__status new-player__status--checked">reserve</label>
+								</div>
+								<div class="new-player__row new-player__row--ok">
+									<button class="new-player__ok" id="newPlayerConfirm">save</button>
 								</div>
 							</div>
-							<div class="new-player__row new-player__row--type">
-								<input type="radio" name="role" id="isField" checked class="full-nav__input">
-								<input type="radio" name="role" id="isReserve" class="full-nav__input">
-								<label for="isField" class="new-player__status">field</label>
-								<label for="isReserve" class="new-player__status new-player__status--checked">reserve</label>
+						</div>
+					</div>
+					<div class="full-nav__item" id="newround">
+						<input type="radio" class="full-nav__input" id="inp3" name="inputs" disabled>
+						<label for="inp3" class="full-nav__item">begin round</label>
+					</div>
+					<div class="full-nav__item" id="editplayer">
+						<input type="radio" class="full-nav__input" id="inp2" name="inputs">
+						<label for="inp2" class="full-nav__item">edit player</label>
+						<div class="full-nav__submenu">
+							<div class="full-nav__players">
+								<div class="full-nav__player">player one name</div>
+								<div class="full-nav__player">player name</div>
+								<div class="full-nav__player">player name</div>
+								<div class="full-nav__player">player name</div>
+								<div class="full-nav__player">player name</div>
+								<div class="full-nav__player">player name</div>
+								<div class="full-nav__player">player name</div>
+								<div class="full-nav__player">player name</div>
+								<div class="full-nav__player full-nav__player-isReserve">player name</div>
+								<div class="full-nav__player full-nav__player-isReserve">player name</div>
+								<div class="full-nav__player full-nav__player-isReserve">player name</div>
+								<div class="full-nav__player full-nav__player-isReserve">player name</div>
+								<div class="full-nav__player full-nav__player-isReserve">player name</div>
+								<div class="full-nav__player full-nav__player-isReserve">player name</div>
 							</div>
-							<div class="new-player__row new-player__row--ok">
-								<button class="new-player__ok" id="newPlayerConfirm">save</button>
+						</div>
+					</div>
+					<div class="full-nav__item" id="clearall">
+						<input type="radio" class="full-nav__input" id="inp4" name="inputs">
+						<label for="inp4" class="full-nav__item">results management</label>
+						<div class="full-nav__submenu">
+							<div class="full-nav__submenu-item full-nav__submenu-item--warning" id="langru">clear match results</div>
+							<div class="full-nav__submenu-item" id="langru">end match and save results</div>
+						</div>
+					</div>
+					<div class="full-nav__item" id="setlang">
+						<input type="radio" class="full-nav__input" id="inp5" name="inputs">
+						<label for="inp5" class="full-nav__item">select language</label>
+						<div class="full-nav__submenu">
+							<div class="full-nav__submenu-item" id="langru">russian</div>
+							<div class="full-nav__submenu-item" id="langen">english</div>
+						</div>
+					</div>
+					<div class="full-nav__item" id="stats">
+						<input type="radio" class="full-nav__input" id="inp6" name="inputs" disabled>
+						<label for="inp6" class="full-nav__item">match statistics</label>
+					</div>
+					<div class="full-nav__item" id="help">
+						<input type="radio" class="full-nav__input" id="inp7" name="inputs" disabled>
+						<label for="inp7" class="full-nav__item">help &amp; feedback</label>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="app" id="app">
+			<section class="players-stat">
+				<header class="players-stat__header">
+					<div class="players-stat__activity">inning</div>
+					<div class="players-stat__activity">defense</div>
+					<div class="players-stat__activity">attack</div>
+					<div class="players-stat__activity">pass</div>
+				</header>
+				<div class="players-stat__players">
+					<div class="player player--ingame">
+						<div class="player__name">
+							Player One
+						</div>
+						<div class="player__stats">
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="full-nav__item" id="newround">
-					<input type="radio" class="full-nav__input" id="inp3" name="inputs" disabled>
-					<label for="inp3" class="full-nav__item">begin round</label>
-				</div>
-				<div class="full-nav__item" id="editplayer">
-					<input type="radio" class="full-nav__input" id="inp2" name="inputs">
-					<label for="inp2" class="full-nav__item">edit player</label>
-					<div class="full-nav__submenu">
-						<div class="full-nav__players">
-							<div class="full-nav__player">player one name</div>
-							<div class="full-nav__player">player name</div>
-							<div class="full-nav__player">player name</div>
-							<div class="full-nav__player">player name</div>
-							<div class="full-nav__player">player name</div>
-							<div class="full-nav__player">player name</div>
-							<div class="full-nav__player">player name</div>
-							<div class="full-nav__player">player name</div>
-							<div class="full-nav__player full-nav__player-isReserve">player name</div>
-							<div class="full-nav__player full-nav__player-isReserve">player name</div>
-							<div class="full-nav__player full-nav__player-isReserve">player name</div>
-							<div class="full-nav__player full-nav__player-isReserve">player name</div>
-							<div class="full-nav__player full-nav__player-isReserve">player name</div>
-							<div class="full-nav__player full-nav__player-isReserve">player name</div>
+					<div class="results__parameters ishidden">
+						<div class="results__parameter">Overall eff.</div>
+						<div class="results__values">
+							<div class="results__value">0%</div>
+							<div class="results__value">0%</div>
+							<div class="results__value">0%</div>
+							<div class="results__value">0%</div>
 						</div>
 					</div>
-				</div>
-				<div class="full-nav__item" id="clearall">
-					<input type="radio" class="full-nav__input" id="inp4" name="inputs">
-					<label for="inp4" class="full-nav__item">results management</label>
-					<div class="full-nav__submenu">
-						<div class="full-nav__submenu-item full-nav__submenu-item--warning" id="langru">clear match results</div>
-						<div class="full-nav__submenu-item" id="langru">end match and save results</div>
-					</div>
-				</div>
-				<div class="full-nav__item" id="setlang">
-					<input type="radio" class="full-nav__input" id="inp5" name="inputs">
-					<label for="inp5" class="full-nav__item">select language</label>
-					<div class="full-nav__submenu">
-						<div class="full-nav__submenu-item" id="langru">russian</div>
-						<div class="full-nav__submenu-item" id="langen">english</div>
-					</div>
-				</div>
-				<div class="full-nav__item" id="stats">
-					<input type="radio" class="full-nav__input" id="inp6" name="inputs" disabled>
-					<label for="inp6" class="full-nav__item">match statistics</label>
-				</div>
-				<div class="full-nav__item" id="help">
-					<input type="radio" class="full-nav__input" id="inp7" name="inputs" disabled>
-					<label for="inp7" class="full-nav__item">help &amp; feedback</label>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<div class="app" id="app">
-		<section class="players-stat">
-			<header class="players-stat__header">
-				<div class="players-stat__activity">inning</div>
-				<div class="players-stat__activity">defense</div>
-				<div class="players-stat__activity">attack</div>
-				<div class="players-stat__activity">pass</div>
-			</header>
-			<div class="players-stat__players">
-				<div class="player player--ingame">
-					<div class="player__name">
-						Player One
-					</div>
-					<div class="player__stats">
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
+					<div class="player player--ingame">
+						<div class="player__name">
+							Player Two
 						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
+						<div class="player__stats">
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="results__parameters ishidden">
-					<div class="results__parameter">Overall eff.</div>
-					<div class="results__values">
-						<div class="results__value">0%</div>
-						<div class="results__value">0%</div>
-						<div class="results__value">0%</div>
-						<div class="results__value">0%</div>
-					</div>
-				</div>
-				<div class="player player--ingame">
-					<div class="player__name">
-						Player Two
-					</div>
-					<div class="player__stats">
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
+					<div class="player player--ingame">
+						<div class="player__name">
+							Player three
 						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
+						<div class="player__stats">
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="player player--ingame">
-					<div class="player__name">
-						Player three
-					</div>
-					<div class="player__stats">
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
+					<div class="player player--ingame">
+						<div class="player__name">
+							player four
 						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-					</div>
-				</div>
-				<div class="player player--ingame">
-					<div class="player__name">
-						player four
-					</div>
-					<div class="player__stats">
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
+						<div class="player__stats">
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="player player--ingame">
-					<div class="player__name">
-						Player five
-					</div>
-					<div class="player__stats">
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
+					<div class="player player--ingame">
+						<div class="player__name">
+							Player five
 						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-					</div>
-				</div>
-				<div class="player player--ingame">
-					<div class="player__name">
-						player six
-					</div>
-					<div class="player__stats">
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
-						</div>
-						<div class="stat">
-							<div class="stat__item stat__item--good">0</div>
-							<div class="stat__item stat__item--normal">0</div>
-							<div class="stat__item stat__item--bad">0</div>
+						<div class="player__stats">
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section class="welcome ishidden    ">
-			<div class="infopanel infopanel--welcome">
-				<div class="infopanel__section" id="username">anonymous</div>
-				<div class="infopanel__section" id="login">sign in / sign up</div>
-			</div>
-			<section class="welcome__section welcome__section--first">
-				<div class="welcome__content">
-					<h1 class="welcome__header">Welcome to Volley Stats app</h1>
-					<p class="welcome__text">This application will help you to collect, store and analyze individual statistics of volleyball players. </p>
-					<button class="welcome__button">learn more</button>
-					<button class="welcome__button welcome__button--getstarted">get started</button>
-				</div>
-				<div class="welcome__screenshot"></div>
-			</section>
-			<section class="welcome__section">
-				<h2 class="welcome__header">Fatures</h2>
-				<div class="features">
-					<div class="features__item">
-						<i class="fa fa-magic features__icon" aria-hidden="true"></i>
-						<p class="welcome__subheader">Easy statistics picking</p>
-						<p class="features__desc">Designed specially for mobile devices and tablets,
-							Volley Stats is comfortable for using in game. Some of your friends, fans, coach assistant or reserve players can
-							collect statistics when your team is playing.</p>
-					</div>
-					<div class="features__item">
-						<i class="fa fa-line-chart features__icon" aria-hidden="true"></i>
-						<p class="welcome__subheader">Powerful analytics</p>
-						<p class="features__desc">Volley Stats has a set of statistical indicators of the effectiveness of players.
-							Looking at the results of the match, you can find out what contribution
-							each player made and how useful his actions were.</p>
-					</div>
-					<div class="features__item">
-						<i class="fa fa-cloud-upload features__icon" aria-hidden="true"></i>
-						<p class="welcome__subheader">Saving match results</p>
-						<p class="features__desc">You can download your results in cloud. Further results can be viewed and compared.</p>
-					</div>
-					<div class="features__item">
-						<i class="fa fa-diamond features__icon" aria-hidden="true"></i>
-						<p class="welcome__subheader">Free to use</p>
-						<p class="features__desc">You can use Volley Stats as many as you like. If you have
-							suggestions for improving Volley Stats, please contact us.</p>
-					</div>
-					<div class="features__item">
-						<i class="fa fa-thumbs-up features__icon" aria-hidden="true"></i>
-						<p class="welcome__subheader">Ideal for amateur teams</p>
-						<p class="features__desc">With Volley Stats you will bring your team to a new level!</p>
+					<div class="player player--ingame">
+						<div class="player__name">
+							player six
+						</div>
+						<div class="player__stats">
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+							<div class="stat">
+								<div class="stat__item stat__item--good">0</div>
+								<div class="stat__item stat__item--normal">0</div>
+								<div class="stat__item stat__item--bad">0</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="welcome__section">
-				<h2 class="welcome__header">Getting started</h2>
-				<p class="welcome__intro">
-					Volley Stats is intuitive and very easy to use. Collect your team`s statistics in 5 easy steps:
-				</p>
-				<ul class="timeline">
-					<li class="timeline__item">
-						<div class="timeline__box">
-							<span class="timeline__number">1</span>
-							<div class="timeline__content">
-								<h3 class="timeline__heading">Add players</h3>
-								<p class="timeline__desc">Go to Volley Stats menu on top left corner of the screen and add your players. Each player can be
-									field or reserve and has his game role.</p>
-							</div>
+			<section class="welcome ishidden    ">
+				<div class="infopanel infopanel--welcome">
+					<div class="infopanel__section" id="username">anonymous</div>
+					<div class="infopanel__section" id="login">sign in / sign up</div>
+				</div>
+				<section class="welcome__section welcome__section--first">
+					<div class="welcome__content">
+						<h1 class="welcome__header">Welcome to Volley Stats app</h1>
+						<p class="welcome__text">This application will help you to collect, store and analyze individual statistics of volleyball players. </p>
+						<button class="welcome__button">learn more</button>
+						<button class="welcome__button welcome__button--getstarted">get started</button>
+					</div>
+					<div class="welcome__screenshot"></div>
+				</section>
+				<section class="welcome__section">
+					<h2 class="welcome__header">Fatures</h2>
+					<div class="features">
+						<div class="features__item">
+							<i class="fa fa-magic features__icon" aria-hidden="true"></i>
+							<p class="welcome__subheader">Easy statistics picking</p>
+							<p class="features__desc">Designed specially for mobile devices and tablets,
+								Volley Stats is comfortable for using in game. Some of your friends, fans, coach assistant or reserve players can
+								collect statistics when your team is playing.</p>
 						</div>
-					</li>
-					<li class="timeline__item">
-						<div class="timeline__box">
-							<span class="timeline__number">2</span>
-							<div class="timeline__content">
-								<h3 class="timeline__heading">Start round</h3>
-								<p class="timeline__desc">When your team is ready, press "Start Round".</p>
-							</div>
+						<div class="features__item">
+							<i class="fa fa-line-chart features__icon" aria-hidden="true"></i>
+							<p class="welcome__subheader">Powerful analytics</p>
+							<p class="features__desc">Volley Stats has a set of statistical indicators of the effectiveness of players.
+								Looking at the results of the match, you can find out what contribution
+								each player made and how useful his actions were.</p>
 						</div>
-					</li>
-					<li class="timeline__item">
-						<div class="timeline__box">
-							<span class="timeline__number">3</span>
-							<div class="timeline__content">
-								<h3 class="timeline__heading">Note game actions</h3>
-								<p class="timeline__desc">Watch your team and mark player`s
-									game actions on the statistic`s gathering screen. There
-									are four actions and three gradations of quality for each action: good (green), normal (yellow) and bad (red).
-									Usually "good" means that player brought a point to the team, "normal" - no point but the ball
-								is in game, "bad" - player lost a point.</p>
-							</div>
+						<div class="features__item">
+							<i class="fa fa-cloud-upload features__icon" aria-hidden="true"></i>
+							<p class="welcome__subheader">Saving match results</p>
+							<p class="features__desc">You can download your results in cloud. Further results can be viewed and compared.</p>
 						</div>
-					</li>
-					<li class="timeline__item">
-						<div class="timeline__box">
-							<span class="timeline__number">4</span>
-							<div class="timeline__content">
-								<h3 class="timeline__heading">Note game rounds (optional)</h3>
-								<p class="timeline__desc">You can mark new rounds during the match. If you
-									do so, you will get match statistics for each round.</p>
-							</div>
+						<div class="features__item">
+							<i class="fa fa-diamond features__icon" aria-hidden="true"></i>
+							<p class="welcome__subheader">Free to use</p>
+							<p class="features__desc">You can use Volley Stats as many as you like. If you have
+								suggestions for improving Volley Stats, please contact us.</p>
 						</div>
-					</li>
-					<li class="timeline__item">
-						<div class="timeline__box timeline__box--last">
-							<span class="timeline__number">5</span>
-							<div class="timeline__content">
-								<h3 class="timeline__heading">Save results</h3>
-								<p class="timeline__desc">If you are logged in,
-									you can save the results in your profile, if not - just send the results to the email.</p>
-							</div>
+						<div class="features__item">
+							<i class="fa fa-thumbs-up features__icon" aria-hidden="true"></i>
+							<p class="welcome__subheader">Ideal for amateur teams</p>
+							<p class="features__desc">With Volley Stats you will bring your team to a new level!</p>
 						</div>
-					</li>
-				</ul>
+					</div>
+				</section>
+				<section class="welcome__section">
+					<h2 class="welcome__header">Getting started</h2>
+					<p class="welcome__intro">
+						Volley Stats is intuitive and very easy to use. Collect your team`s statistics in 5 easy steps:
+					</p>
+					<ul class="timeline">
+						<li class="timeline__item">
+							<div class="timeline__box">
+								<span class="timeline__number">1</span>
+								<div class="timeline__content">
+									<h3 class="timeline__heading">Add players</h3>
+									<p class="timeline__desc">Go to Volley Stats menu on top left corner of the screen and add your players. Each player can be
+										field or reserve and has his game role.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline__item">
+							<div class="timeline__box">
+								<span class="timeline__number">2</span>
+								<div class="timeline__content">
+									<h3 class="timeline__heading">Start round</h3>
+									<p class="timeline__desc">When your team is ready, press "Start Round".</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline__item">
+							<div class="timeline__box">
+								<span class="timeline__number">3</span>
+								<div class="timeline__content">
+									<h3 class="timeline__heading">Note game actions</h3>
+									<p class="timeline__desc">Watch your team and mark player`s
+										game actions on the statistic`s gathering screen. There
+										are four actions and three gradations of quality for each action: good (green), normal (yellow) and bad (red).
+										Usually "good" means that player brought a point to the team, "normal" - no point but the ball
+									is in game, "bad" - player lost a point.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline__item">
+							<div class="timeline__box">
+								<span class="timeline__number">4</span>
+								<div class="timeline__content">
+									<h3 class="timeline__heading">Note game rounds (optional)</h3>
+									<p class="timeline__desc">You can mark new rounds during the match. If you
+										do so, you will get match statistics for each round.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline__item">
+							<div class="timeline__box timeline__box--last">
+								<span class="timeline__number">5</span>
+								<div class="timeline__content">
+									<h3 class="timeline__heading">Save results</h3>
+									<p class="timeline__desc">If you are logged in,
+										you can save the results in your profile, if not - just send the results to the email.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="welcome__section">
+					<h2 class="welcome__header">Feedback</h2>
+					<p  class="welcome__intro">
+						If you notice an error, or if you have suggestions for improving the service,
+						or if something seems uncomfortable and you would like to change it - please contact the developer:
+					</p>
+					<form action="#" class="feedback">
+						<label for="feedbackName" class="feedback__label">Name: </label>
+						<input type="text" id="feedbackName" placeholder="Your name" class="feedback__text">
+						<label for="feedbackEmail" class="feedback__label">Email:</label>
+						<input type="email" id="feedbackEmail" placeholder="Your email" class="feedback__text">
+						<label for="feedbackMsg" class="feedback__label">Message:</label>
+						<textarea type="text" id="feedbackMsg" class="feedback__text" rows="5"></textarea>
+						<button class="welcome__button welcome__button--getstarted">Send message</button>
+					</form>
+				</section>
 			</section>
-			<section class="welcome__section">
-				<h2 class="welcome__header">Feedback</h2>
-				<p  class="welcome__intro">
-					If you notice an error, or if you have suggestions for improving the service,
-					or if something seems uncomfortable and you would like to change it - please contact the developer:
-				</p>
-				<form action="#" class="feedback">
-					<label for="feedbackName" class="feedback__label">Name: </label>
-					<input type="text" id="feedbackName" placeholder="Your name" class="feedback__text">
-					<label for="feedbackEmail" class="feedback__label">Email:</label>
-					<input type="email" id="feedbackEmail" placeholder="Your email" class="feedback__text">
-					<label for="feedbackMsg" class="feedback__label">Message:</label>
-					<textarea type="text" id="feedbackMsg" class="feedback__text" rows="5"></textarea>
-					<button class="welcome__button welcome__button--getstarted">Send message</button>
-				</form>
-			</section>
-		</section>
+		</div>
 	</div>
-	<script src="app.js" defer></script>
+		<script src="app.js" defer></script>
 </body>
 </html>
