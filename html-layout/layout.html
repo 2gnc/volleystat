@@ -13,14 +13,14 @@
 		<header class="header">
 			<nav class="small-nav">
 				<div class="logo logo--small"></div>
-			</nav>
+			</nav> <!-- end of <nav class="small-nav"> -->
 			<nav class="full-nav ishidden">
 				<div class="logo logo--full"></div>
 				<div class="infopanel">
 					<div class="infopanel__section" id="username">UserName</div>
 					<div class="infopanel__section" id="login">logout</div>
 					<div class="infopanel__section" id="matchInfo">round: 2</div>
-				</div>
+				</div> <!-- end of <div class="infopanel"> -->
 				<div class="full-nav__box">
 					<div class="full-nav__item" id="newplayer">
 						<input type="radio" class="full-nav__input" id="inp1" name="inputs">
@@ -31,7 +31,7 @@
 									<div class="new-player__row new-player__row--name">
 										<label for="playerName">name:</label>
 										<input type="text" id="playerName" class="new-player__input new-player__input--text">
-									</div>
+									</div><!-- end of <div class="new-player__row new-player__row--name"> -->
 									<div class="new-player__row new-player__row--role">
 										<p class="new-player__heading">role:</p>
 										<input type="checkbox" id="isLibero" class="full-nav__input">
@@ -44,20 +44,20 @@
 										<label for="isOutsideH" class="new-player__role">outside hitter</label>
 										<label for="isWeeksideH" class="new-player__role">weekside hitter</label>
 										<label for="isMiddleB" class="new-player__role">middle blocker</label>
-									</div>
-								</div>
+									</div><!-- end of <div class="new-player__row new-player__row--role"> -->
+								</div><!-- end of <div class="new-player__col"> -->
 								<div class="new-player__row new-player__row--type">
 									<input type="radio" name="role" id="isField" checked class="full-nav__input">
 									<input type="radio" name="role" id="isReserve" class="full-nav__input">
 									<label for="isField" class="new-player__status">field</label>
 									<label for="isReserve" class="new-player__status new-player__status--checked">reserve</label>
-								</div>
+								</div><!-- end of <div class="new-player__row new-player__row--type"> -->
 								<div class="new-player__row new-player__row--ok">
 									<button class="new-player__ok" id="newPlayerConfirm">save</button>
 								</div>
-							</div>
-						</div>
-					</div>
+							</div> <!-- end of <div class="new-player">-->
+						</div> <!-- end of <div class="full-nav__submenu"> -->
+					</div> <!-- end of <div class="full-nav__item" id="newplayer"> -->
 					<div class="full-nav__item" id="newround">
 						<input type="radio" class="full-nav__input" id="inp3" name="inputs" disabled>
 						<label for="inp3" class="full-nav__item">begin round</label>
@@ -81,9 +81,9 @@
 								<div class="full-nav__player full-nav__player-isReserve">player name</div>
 								<div class="full-nav__player full-nav__player-isReserve">player name</div>
 								<div class="full-nav__player full-nav__player-isReserve">player name</div>
-							</div>
-						</div>
-					</div>
+							</div><!-- end of <div class="full-nav__players"> -->
+						</div> <!-- end of <div class="full-nav__submenu"> -->
+					</div><!-- end of <div class="full-nav__item" id="editplayer"> -->
 					<div class="full-nav__item" id="clearall">
 						<input type="radio" class="full-nav__input" id="inp4" name="inputs">
 						<label for="inp4" class="full-nav__item">results management</label>
@@ -91,7 +91,7 @@
 							<div class="full-nav__submenu-item full-nav__submenu-item--warning" id="langru">clear match results</div>
 							<div class="full-nav__submenu-item" id="langru">end match and save results</div>
 						</div>
-					</div>
+					</div> <!-- end of <div class="full-nav__item" id="clearall"> -->
 					<div class="full-nav__item" id="setlang">
 						<input type="radio" class="full-nav__input" id="inp5" name="inputs">
 						<label for="inp5" class="full-nav__item">select language</label>
@@ -99,7 +99,7 @@
 							<div class="full-nav__submenu-item" id="langru">russian</div>
 							<div class="full-nav__submenu-item" id="langen">english</div>
 						</div>
-					</div>
+					</div><!-- end of <div class="full-nav__item" id="setlang"> -->
 					<div class="full-nav__item" id="stats">
 						<input type="radio" class="full-nav__input" id="inp6" name="inputs" disabled>
 						<label for="inp6" class="full-nav__item">match statistics</label>
@@ -108,9 +108,9 @@
 						<input type="radio" class="full-nav__input" id="inp7" name="inputs" disabled>
 						<label for="inp7" class="full-nav__item">help &amp; feedback</label>
 					</div>
-				</div>
-			</nav>
-		</header>
+				</div> <!-- end of <div class="full-nav__box"> -->
+			</nav> <!-- end of <nav class="full-nav> -->
+		</header> <!-- end of <header class="header"> -->
 		<div class="app" id="app">
 			<section class="players-stat ishidden">
 				<header class="players-stat__header">
@@ -118,7 +118,7 @@
 					<div class="players-stat__activity">defense</div>
 					<div class="players-stat__activity">attack</div>
 					<div class="players-stat__activity">pass</div>
-				</header>
+				</header> <!-- end of <header class="players-stat__header"> -->
 				<div class="players-stat__players">
 					<div class="player player--ingame">
 						<div class="player__name">
@@ -146,7 +146,7 @@
 								<div class="stat__item stat__item--bad">0</div>
 							</div>
 						</div>
-					</div>
+					</div><!-- end of <div class="player> -->
 					<div class="results__parameters ishidden">
 						<div class="results__parameter">Overall eff.</div>
 						<div class="results__values">
@@ -182,7 +182,7 @@
 								<div class="stat__item stat__item--bad">0</div>
 							</div>
 						</div>
-					</div>
+					</div><!-- end of <div class="player> -->
 					<div class="player player--ingame">
 						<div class="player__name">
 							Player three
@@ -209,7 +209,7 @@
 								<div class="stat__item stat__item--bad">0</div>
 							</div>
 						</div>
-					</div>
+					</div><!-- end of <div class="player> -->
 					<div class="player player--ingame">
 						<div class="player__name">
 							player four
@@ -236,7 +236,7 @@
 								<div class="stat__item stat__item--bad">0</div>
 							</div>
 						</div>
-					</div>
+					</div><!-- end of <div class="player> -->
 					<div class="player player--ingame">
 						<div class="player__name">
 							Player five
@@ -263,7 +263,7 @@
 								<div class="stat__item stat__item--bad">0</div>
 							</div>
 						</div>
-					</div>
+					</div><!-- end of <div class="player> -->
 					<div class="player player--ingame">
 						<div class="player__name">
 							player six
@@ -290,14 +290,14 @@
 								<div class="stat__item stat__item--bad">0</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</section>
+					</div><!-- end of <div class="player> -->
+				</div><!-- end of <div class="players-stat__players"> -->
+			</section><!-- end of <section class="players-stat> -->
 			<section class="welcome ">
 				<div class="infopanel infopanel--welcome">
 					<div class="infopanel__section" id="username">anonymous</div>
 					<div class="infopanel__section" id="login">sign in / sign up</div>
-				</div>
+				</div><!-- end of <div class="infopanel infopanel--welcome"> -->
 				<section class="welcome__section welcome__section--first">
 					<div class="welcome__content">
 						<h1 class="welcome__header">Welcome to Volley Stats app</h1>
@@ -306,7 +306,7 @@
 						<button class="welcome__button welcome__button--getstarted">get started</button>
 					</div>
 					<div class="welcome__screenshot"></div>
-				</section>
+				</section><!-- end of <section class="welcome__section welcome__section--first">-->
 				<section class="welcome__section">
 					<h2 class="welcome__header">Fatures</h2>
 					<div class="features">
@@ -340,8 +340,8 @@
 							<p class="welcome__subheader">Ideal for amateur teams</p>
 							<p class="features__desc">With Volley Stats you will bring your team to a new level!</p>
 						</div>
-					</div>
-				</section>
+					</div><!-- end of <div class="features"> -->
+				</section><!-- end of <section class="welcome__section"> -->
 				<section class="welcome__section">
 					<h2 class="welcome__header">Getting started</h2>
 					<p class="welcome__intro">
@@ -400,8 +400,8 @@
 								</div>
 							</div>
 						</li>
-					</ul>
-				</section>
+					</ul><!-- end of <ul class="timeline"> -->
+				</section><!-- end of <section class="welcome__section"> -->
 				<section class="welcome__section">
 					<h2 class="welcome__header">Feedback</h2>
 					<p  class="welcome__intro">
@@ -418,9 +418,8 @@
 						<button class="welcome__button welcome__button--getstarted">Send message</button>
 					</form>
 				</section>
-			</section>
-		</div>
-	</div>
-		<script src="app.js" defer></script>
+			</section><!-- end of <section class="welcome "> -->
+		</div><!-- end of <div class="app" id="app"> -->
+	</div> <!-- end of <div id="react"> -->
 </body>
 </html>
