@@ -11,16 +11,17 @@
 <body>
 	<div id="react">
 		<header class="header">
-			<nav class="small-nav">
-				<div class="logo logo--small"></div>
-			</nav> <!-- end of <nav class="small-nav"> -->
-			<nav class="full-nav ishidden">
-				<div class="logo logo--full"></div>
-				<div class="infopanel">
-					<div class="infopanel__section" id="username">UserName</div>
-					<div class="infopanel__section" id="login">logout</div>
+			<!--<nav class="small-nav">-->
+				<div class="nav-button nav-button--can-open nav-button--stats"></div> <!-- nav-button--can-close -->
+				<div class="nav-button nav-button--can-close ishidden">
+					<i class="fa fa-times fa--close" aria-hidden="true"></i>
+				</div>
+				<div class="infopanel ishidden">
+					<div class="infopanel__section" id="username">anonymous</div>
+					<div class="infopanel__section" id="login">sign in / sign up</div>
 					<div class="infopanel__section" id="matchInfo">round: 2</div>
-				</div> <!-- end of <div class="infopanel"> -->
+				</div><!-- end of <div class="infopanel"> -->
+			<nav class="full-nav ishidden">
 				<div class="full-nav__box">
 					<div class="full-nav__item" id="newplayer">
 						<input type="radio" class="full-nav__input" id="inp1" name="inputs">
@@ -112,7 +113,7 @@
 			</nav> <!-- end of <nav class="full-nav> -->
 		</header> <!-- end of <header class="header"> -->
 		<div class="app" id="app">
-			<section class="players-stat ishidden">
+			<section class="players-stat">
 				<header class="players-stat__header">
 					<div class="players-stat__activity">inning</div>
 					<div class="players-stat__activity">defense</div>
@@ -293,11 +294,7 @@
 					</div><!-- end of <div class="player> -->
 				</div><!-- end of <div class="players-stat__players"> -->
 			</section><!-- end of <section class="players-stat> -->
-			<section class="welcome ">
-				<div class="infopanel infopanel--welcome">
-					<div class="infopanel__section" id="username">anonymous</div>
-					<div class="infopanel__section" id="login">sign in / sign up</div>
-				</div><!-- end of <div class="infopanel infopanel--welcome"> -->
+			<section class="welcome ishidden">
 				<section class="welcome__section welcome__section--first">
 					<div class="welcome__content">
 						<h1 class="welcome__header">Welcome to Volley Stats app</h1>
