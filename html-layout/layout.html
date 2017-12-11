@@ -11,14 +11,14 @@
 <body>
 	<div id="react">
 		<header class="header">
-				<div class="nav-button nav-button--can-open nav-button--stats"></div> <!-- nav-button--can-close -->
+				<div class="nav-button nav-button--can-open"></div> <!-- nav-button--can-close nav-button--stats -->
 				<div class="nav-button nav-button--can-close ishidden">
 					<i class="fa fa-times fa--close" aria-hidden="true"></i>
 				</div>
-				<div class="infopanel ishidden">
+				<div class="infopanel"><!-- ishidden-->
 					<div class="infopanel__section" id="username">anonymous</div>
 					<div class="infopanel__section" id="login">sign in / sign up</div>
-					<div class="infopanel__section" id="matchInfo">round: 2</div>
+					<div class="infopanel__section ishidden" id="matchInfo">round: 2</div>
 				</div><!-- end of <div class="infopanel"> -->
 			<nav class="full-nav ishidden">
 				<div class="full-nav__box">
@@ -112,7 +112,7 @@
 			</nav> <!-- end of <nav class="full-nav> -->
 		</header> <!-- end of <header class="header"> -->
 		<div class="app" id="app">
-			<section class="players-stat">
+			<section class="players-stat ishidden"><!-- ishidden -->
 				<header class="players-stat__header">
 					<div class="players-stat__activity">inning</div>
 					<div class="players-stat__activity">defense</div>
@@ -293,7 +293,7 @@
 					</div><!-- end of <div class="player> -->
 				</div><!-- end of <div class="players-stat__players"> -->
 			</section><!-- end of <section class="players-stat> -->
-			<section class="welcome ishidden">
+			<section class="welcome"><!-- ishidden -->
 				<section class="welcome__section welcome__section--first">
 					<div class="welcome__content">
 						<h1 class="welcome__header">Welcome to Volley Stats app</h1>
